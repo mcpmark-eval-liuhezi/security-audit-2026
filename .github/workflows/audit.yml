@@ -1,0 +1,11 @@
+name: Audit
+
+on:
+  push:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report repository
+        run: echo "Repository: ${{ github.repository }}"
